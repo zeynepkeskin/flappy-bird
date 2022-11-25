@@ -1,8 +1,7 @@
 var y = 60;
 let x = 40;
 let pipesleft = 130;
-let pipex = 100;
-let bird = document.querySelector('#bird');
+let pipex = -50;
 let score = 0;
 
 function jump() {
@@ -10,7 +9,7 @@ function jump() {
     document.querySelector('#bird').style.bottom = y + "vh";
 }
 
-/*
+
 function gameover() {
     clearInterval(gameloop);
     document.querySelector('#bird').style.display = "none";
@@ -19,7 +18,10 @@ function gameover() {
     document.querySelector('#gameover').style.color = "red";
 
 }
-*/
+function checkCollision(){
+    
+}
+
 const gameloop = setInterval(
     function update() {
         if (pipesleft > -50) {
@@ -42,6 +44,9 @@ const gameloop = setInterval(
         if (pipesleft === x) {
             score = score + 1;
             document.getElementById("score").innerHTML = score;
+        }
+        if(checkCollision() === true){
+            gameover()
         }
     }
     , 20);

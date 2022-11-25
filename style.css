@@ -12,8 +12,8 @@ body {
 }
 
 #bird {
-    width: 85px;
-    height: 85px;
+    width: 9vh;
+    height: 9vh;
     background-color: rgb(255, 255, 255);
     position: absolute;
     left: 40vw;
@@ -28,7 +28,7 @@ body {
     background-color: rgb(161, 161, 161);
     position: absolute;
     left: 130vw;
-    top: 0;
+    top: -65vh;
 
 }
 
@@ -38,7 +38,7 @@ body {
     background-color: rgb(161, 161, 161);
     position: absolute;
     left: 130vw;
-    bottom: 0;
+    bottom: -65vh;
 }
 
 #gameover {
